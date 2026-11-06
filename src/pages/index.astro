@@ -1,0 +1,441 @@
+---
+const year = new Date().getFullYear();
+import "../styles/landing.css";
+
+const phoneNumber = "+551999908380"
+
+
+---
+
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+		<meta
+			name="description"
+			content="DIA30 organiza contas a pagar: fluxos de autorização, cadeia de comando, duplicidade e visibilidade de cada gasto."
+		/>
+		<meta property="og:title" content="DIA30 — Contas a pagar" />
+		<meta
+			property="og:description"
+			content="Controle de aprovações customizável. Crie fluxos de autorização e cadeias de comando com simplicidade."
+		/>
+		<meta property="og:image" content="/grok-image-ffbbd77f-f0be-4135-82f6-980b0838a313.jpg" />
+		<meta property="og:locale" content="pt_BR" />
+		<title>DIA30 — Contas a pagar</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,560;9..144,640&family=Noto+Sans:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+		<header class="site-header">
+			<div class="wrap header-inner">
+				<a class="brand" href="#topo">
+					<span class="brand-mark" aria-hidden="true"></span>
+					DIA30
+				</a>
+				<input class="nav-toggle" id="nav-toggle" type="checkbox" />
+				<label class="nav-burger" for="nav-toggle">
+					<span class="when-closed">Menu</span>
+					<span class="when-open">Fechar</span>
+				</label>
+				<nav class="site-nav" aria-label="Seções">
+					<a href="#ideia">Ideia</a>
+					<a href="#requisicoes">Requisições</a>
+					<a href="#beneficios">Benefícios</a>
+					<a href="#planos">Planos</a>
+					<a href="#contato">Contato</a>
+				</nav>
+				<a class="btn btn-ink" href="#contato">Pedir contato</a>
+			</div>
+		</header>
+
+		<main id="conteudo">
+			<section class="hero" id="topo">
+				<div class="wrap hero-layout">
+					<div class="hero-copy">
+						<p class="kicker">Contas a Pagar • Requisição de Serviço</p>
+						<h1>Controle cada aspecto do seu processo.</h1>
+						<p class="lede">
+						Gerencie seu contas a pagar com fluxos de aprovação customizáveis. Evite custos desnecessários com o controle de duplicidade.
+						</p>
+						<div class="hero-actions">
+							<a
+								class="btn btn-ink"
+								href="https://wa.me/5519999083580?text=Ol%C3%A1%2C%20quero%20conhecer%20o%20DIA30%20para%20contas%20a%20pagar."
+								>Falar no WhatsApp</a
+							>
+							<a class="btn btn-light" href="#ideia">Conhecer</a>
+						</div>
+					</div>
+					<ul class="spec-row" aria-label="O que o DIA30 cobre">
+						<li>
+							<strong>Aprovação</strong>
+							<span>Perfis de pprovação</span>
+						</li>
+						<li>
+							<strong>Gastos</strong>
+							<span>Visibilidade e previsão</span>
+						</li>
+						<li>
+							<strong>Duplicidade</strong>
+							<span>Documento único</span>
+						</li>
+						<li>
+							<strong>Times</strong>
+							<span>Responsabilidade dividida</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="section" id="ideia">
+				<div class="wrap">
+					<div class="section-head">
+						<p class="kicker">Ideia</p>
+						<h2>A conta segue um caminho claro.</h2>
+						<p class="lede">
+							Controle de aprovações customizável: cada aspecto do processo fica no seu lugar.
+							Requisição, documento, parcela e pagamento andam na ordem que a operação já usa.
+						</p>
+					</div>
+					<ol class="steps">
+						<li>
+							<span>01</span>
+							<div>
+								<h3>Entra o documento</h3>
+								<p>Emitente, entidade, valores e parcelas. O arquivo sobe junto com o lançamento.</p>
+							</div>
+						</li>
+						<li>
+							<span>02</span>
+							<div>
+								<h3>Segue o fluxo de aprovação</h3>
+								<p>Quem autoriza, em qual ordem e com qual prazo. O fluxo é simples de montar e fácil de seguir.</p>
+							</div>
+						</li>
+						<li>
+							<span>03</span>
+							<div>
+								<h3>Sai o pagamento</h3>
+								<p>Sem segunda via do mesmo documento. O custo fecha com cálculo de despesa preciso.</p>
+							</div>
+						</li>
+					</ol>
+
+					<div class="flow">
+						<h3>Controle o fluxo operacional de ponta a ponta</h3>
+						<ol class="flow-track">
+							<li>
+								<strong>Requisição de Produto</strong>
+								<p>A necessidade de um novo produto é gerenciada na Requisição</p>
+							</li>
+							<li>
+								<strong>Contas a Pagar</strong>
+								<p>A compra do produto gera um contas a pagar</p>
+							</li>
+							<li>
+								<strong>Estoque</strong>
+								<p>O recebimento do produto gera um estoque</p>
+							</li>
+							<li>
+								<strong>Pedidos</strong>
+								<p>Novos pedidos recebidos utilizam o produto</p>
+							</li>
+							<li>
+								<strong>Recebimento</strong>
+								<p>Pedidos completos resultam no recebimento</p>
+							</li>
+						</ol>
+					</div>
+
+					<p class="flow-close">Controle completo</p>
+					<div class="screens">
+						<article class="shot shot-doc">
+							<h3>Documento</h3>
+							<p>Novo documento em etapas: entidade, emitente, parcelas e resumo.</p>
+						</article>
+						<article class="shot shot-dash">
+							<h3>Dashboard</h3>
+							<p>Indicadores do que entrou nos últimos meses e do que ainda pende.</p>
+						</article>
+						<!-- <article class="shot shot-placeholder">
+							<h3>Placeholder</h3>
+							<p>Espaço para a próxima tela.</p>
+						</article> -->
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="requisicoes">
+				<div class="wrap req-layout">
+					<div>
+						<p class="kicker">Requisição de serviço e produto</p>
+						<h2>Solicitação fácil e completa.</h2>
+						<p class="lede">
+							Configure seu fluxo operacional, atribua times e monitore ocorrências.
+						</p>
+						<ul class="req-points">
+							<li>
+								<h3>Fluxo operacional</h3>
+								<p>Etapas, prazos e quem autoriza, do jeito que a operação já trabalha.</p>
+							</li>
+							<li>
+								<h3>Times</h3>
+								<p>Atribua quem solicita, quem atende e quem aprova.</p>
+							</li>
+							<li>
+								<h3>Ocorrências</h3>
+								<p>Prioridade, SLA e o que venceu ficam na mesma fila.</p>
+							</li>
+						</ul>
+					</div>
+					<div class="req-shots">
+						<article class="shot shot-req">
+							<h3>Requisições</h3>
+							<p>A solicitação entra completa: tipo, prazo, time e o ponto da aprovação.</p>
+						</article>
+						<!-- <article class="shot shot-placeholder">
+							<h3>Placeholder</h3>
+							<p>Segunda imagem da requisição.</p>
+						</article> -->
+					</div>
+				</div>
+			</section>
+
+			<section class="section benefits-band" id="beneficios">
+				<div class="wrap">
+					<div class="section-head light">
+						<p class="kicker">Benefícios</p>
+						<h2>Mais clareza: Inclua seus usuários no processo</h2>
+						<p class="lede">
+							Distribua responsabilidades com menos risco, adicione usuários aos seus processos.
+						</p>
+					</div>
+					<div class="benefit-layout">
+						<div class="photo-panel photo-mesa" role="img" aria-label="Pessoas em volta de uma mesa, anotando uma decisão.">
+							<p>Acesso simples para quem pede, quem aprova e quem paga.</p>
+						</div>
+						<ul class="benefits">
+							<li>
+								<h3>Controle de aprovações customizável</h3>
+								<p>
+									Controle cada aspecto do seu processo. Crie fluxos de autorização e cadeias de comando com simplicidade.
+								</p>
+							</li>
+							<li>
+								<h3>Visibilidade de todos os gastos</h3>
+								<p>Dashboard, parcelas e pagamentos no mesmo painel. O que está aberto não se esconde na caixa de e-mail.</p>
+							</li>
+							<li>
+								<h3>Controle de duplicidade</h3>
+								<p>O mesmo documento não atravessa o fluxo duas vezes. A fila mostra o que já entrou.</p>
+							</li>
+							<li>
+								<h3>Acesso simplificado</h3>
+								<p>Cada pessoa entra no ponto da cadeia que lhe cabe: requisitar, aprovar ou liquidar.</p>
+							</li>
+							<li>
+								<h3>Controle de custos aprimorado</h3>
+								<p>Cálculo de despesas preciso, parcela a parcela, para fechar o mês sem surpresa.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section" id="contabil">
+				<div class="wrap req-layout">
+					<div>
+						<p class="kicker">Contabilidade</p>
+						<h2>Gerencie e integre com sua contabilidade</h2>
+						<p class="lede">
+						  Crie lançamentos e exporte de acordo com seu processo.
+						</p>
+						<ul class="req-points">
+							<li>
+								<h3>Controle operactional</h3>
+								<p>Realize lançamentos diretamente nos documentos.</p>
+							</li>
+							<li>
+								<h3>Times</h3>
+								<p>Crie times para aprovação e gestão contábil.</p>
+							</li>
+							<li>
+								<h3>Integração</h3>
+								<p>Importe e exporte seus dados com facilidade</p>
+							</li>
+						</ul>
+					</div>
+					<div class="req-shots">
+						<article class="shot shot-req">
+							<h3>Contábil</h3>
+							<p>Processamento opcional de lançamentos</p>
+						</article>
+						<!-- <article class="shot shot-placeholder">
+							<h3>Placeholder</h3>
+							<p>Segunda imagem da requisição.</p>
+						</article> -->
+					</div>
+				</div>
+			</section>
+
+			<section class="section plans-band" id="planos">
+				<div class="wrap">
+					<div class="section-head">
+						<p class="kicker">Planos</p>
+						<h2>Do piloto à operação inteira.</h2>
+						<p class="lede">
+							O encaixe depende do volume e de quantas entidades compartilham a mesma cadeia. O valor sai na proposta.
+						</p>
+					</div>
+					<div class="plans">
+						<article class="plan">
+							<header>
+								<p class="kicker">Starter</p>
+								<h3>Plano Mensal</h3>
+								<p>Para sair da planilha sem complicar o começo.</p>
+							</header>
+							<p class="price">R$ 99,80</p>
+							<ul>
+  							<li>Para organizações no início</li>
+								<li>Documentos, parcelas e pagamentos</li>
+								<li>Cadeia de aprovação simples</li>
+								<li>Importação do arquivo do documento</li>
+							</ul>
+							<a class="btn" href="#contato" data-plano="Bancada">Entrar em contato</a>
+						</article>
+						<article class="plan is-main">
+							<header>
+								<p class="kicker">Organization</p>
+								<h3>Plano Anual</h3>
+								<p>Fluxos sob medida e a fila inteira sob controle.</p>
+							</header>
+							<p class="price">R$ 940,90</p>
+							<ul>
+								<li>Aprovações customizáveis</li>
+								<li>Controle de duplicidade</li>
+								<li>Requisições com prioridade e SLA</li>
+								<li>Visibilidade de todos os gastos</li>
+							</ul>
+							<a class="btn btn-ink" href="#contato" data-plano="Linha">Entrar em contato</a>
+						</article>
+						<article class="plan">
+							<header>
+								<p class="kicker">Enterprise</p>
+								<h3>Infraestrutura</h3>
+								<p>Deploy na sua própria infraestrutura com custo reduzido</p>
+							</header>
+							<p class="price">Sob consulta</p>
+							<ul>
+    							<li>Desempenho para larga escala</li>
+								<li>Multi-entidade e multi-organizações</li>
+								<li>Previsão consolidada</li>
+								<li>Cálculo de custos entre unidades</li>
+							</ul>
+							<a class="btn" href="#contato" data-plano="Planta">Pedir proposta</a>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact-band" id="contato">
+				<div class="wrap contact-grid">
+					<div class="contact-copy">
+						<p class="kicker">Contato</p>
+						<h2>Fale com a gente.</h2>
+						<p class="lede">
+
+						</p>
+						<div class="contact-links">
+							<a href="mailto:contato@dia30.com.br">
+								<small>E-mail</small>
+								<strong>contato@dia30.com.br</strong>
+							</a>
+							<a href="https://wa.me/5519999083580?text=Ol%C3%A1%2C%20quero%20uma%20proposta%20do%20DIA30.">
+								<small>WhatsApp</small>
+								<strong>+55 19 99908-3580</strong>
+							</a>
+						</div>
+					</div>
+					<form class="form" id="contato-form">
+						<div class="form-row">
+							<label>
+								Nome
+								<input name="nome" type="text" autocomplete="name" required />
+							</label>
+							<label>
+								Empresa
+								<input name="empresa" type="text" autocomplete="organization" required />
+							</label>
+						</div>
+						<label>
+							Plano de interesse
+							<select name="plano" id="plano">
+								<option>Starter</option>
+								<option selected>Organization</option>
+								<option>Enterprise</option>
+								<option>Ainda não sei</option>
+							</select>
+						</label>
+						<label>
+							Mensagem
+							<textarea name="mensagem" required placeholder="Volume, entidades e como a aprovação funciona hoje."></textarea>
+						</label>
+						<button class="btn btn-ink" type="submit">Enviar por e-mail</button>
+						<p class="form-status" id="form-status" role="status"></p>
+						<p class="form-note">
+							E-mail e WhatsApp desta página são contatos de exemplo. A mensagem abre no seu programa de e-mail.
+						</p>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="wrap footer-inner">
+				<p>© {year} DIA30. Contas a pagar com aprovações, parcelas e custo no mesmo fluxo.</p>
+				<p>E-mail e WhatsApp ilustrativos, até o canal oficial entrar no ar.</p>
+			</div>
+		</footer>
+
+		<script>
+			const toggle = document.querySelector<HTMLInputElement>("#nav-toggle");
+			document.querySelectorAll(".site-nav a").forEach((link) => {
+				link.addEventListener("click", () => {
+					if (toggle) toggle.checked = false;
+				});
+			});
+
+			document.querySelectorAll<HTMLAnchorElement>("[data-plano]").forEach((link) => {
+				link.addEventListener("click", () => {
+					const select = document.querySelector<HTMLSelectElement>("#plano");
+					const plano = link.dataset.plano;
+					if (select && plano) select.value = plano;
+				});
+			});
+
+			const form = document.querySelector<HTMLFormElement>("#contato-form");
+			const status = document.querySelector<HTMLElement>("#form-status");
+			form?.addEventListener("submit", (event) => {
+				event.preventDefault();
+				const data = new FormData(form);
+				const nome = String(data.get("nome") ?? "").trim();
+				const empresa = String(data.get("empresa") ?? "").trim();
+				const plano = String(data.get("plano") ?? "").trim();
+				const mensagem = String(data.get("mensagem") ?? "").trim();
+				const body = `Nome: ${nome}\nEmpresa: ${empresa}\nPlano: ${plano}\n\n${mensagem}`;
+				const href = `mailto:contato@dia30.com.br?subject=${encodeURIComponent(`Contato DIA30 — ${empresa}`)}&body=${encodeURIComponent(body)}`;
+				if (status) status.textContent = "Abrindo o seu programa de e-mail com a mensagem pronta.";
+				window.location.href = href;
+			});
+		</script>
+	</body>
+</html>
