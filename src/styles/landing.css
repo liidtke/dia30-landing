@@ -11,7 +11,8 @@
   --on-ink: #fff8f4;
   --radius: 3px;
   --font: "Noto Sans", "Segoe UI", Tahoma, Arial, sans-serif;
-  --display: Fraunces, Georgia, serif;
+  --brand: "DM Sans", sans-serif;
+  --display: "DM Sans", "Noto Sans", "Source Sans 3", sans-serif;
   --content: 1120px;
   --gutter: 1.25rem;
   --dia: url("/grok-image-ffbbd77f-f0be-4135-82f6-980b0838a313.jpg");
@@ -129,7 +130,7 @@ h3 {
   gap: 0.55rem;
   color: var(--ink);
   text-decoration: none;
-  font-family: var(--display);
+  font-family: var(--brand);
   font-weight: 640;
   font-size: 1.45rem;
   letter-spacing: -0.03em;
